@@ -50,7 +50,6 @@ bot.on(`message`, async ctx => {
             pesan += `\n👉 Konversi dengan kustom index pada file.`
             pesan += `\n\n❔<b>Tata Cara</b>`
             pesan += `\nMulailah dengan menekan tombol dibawah atau mengirim perintah /convert dan kirimkan file yang ingin Anda konversikan.`
-            pesan += `\n\n🤖 Versi: <code>${process.env['VERSION']}</code>`
             keyb[0] = [
                 btn.text(`🛠 Konversi`, `convert_start_none`)
             ]
