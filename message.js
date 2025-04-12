@@ -57,8 +57,12 @@ bot.on(`message`, async ctx => {
 
             await ctx.replyWithHTML(pesan, { reply_markup: markup.inlineKeyboard(keyb) });
             var log = `Ada yang mengakses saya:`
-            log += `\n\nNama: ${await helper.getName(ctx)}}`
+            log += `\n\nNama: ${await helper.getName(ctx)}`
             log += `\nID: <code>${chatID}</code>`
+
+            if (chatID != process.env['ADMIN_BOT']) {
+                bot.telegram.sendMessage(process.env['ADMIN_BOT'], log, { parse_mode: 'HTML' });
+            }
             return;
         }
 
