@@ -1,0 +1,4 @@
+# VCF Converter
+Sebuah bot telegram untuk mengkonversi ke VCF.
+## Orientasi
+Ini adalah perangkat lunak yang dikembangkan oleh <a href='https://t.me/kcpix' target='_blank'>@kcpix</a> dengan menggunakan NodeJS, perangkat lunak ini dapat membantu Anda dalam mengkonversikan file CSV, TXT, XLSX ke format VCF dan memecah file VCF menjadi beberapa bagian, mengkonversikan dengan kustom nama file, kustom nama kontak, kustom jumlah maksimal kontak per-file dan kustom index file. Perangkat lunak ini dapat diakses di Telegram melalui <a href='https://t.me/ConverterVCFBot' target='_blank'>@ConverterVCFBot</a>
