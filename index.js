@@ -33,6 +33,11 @@ bot.telegram.sendMessage(process.env['ADMIN_BOT'], `<b>Bot menyala!</b>\nSemua p
 
 const port = process.env.PORT || 8000;
 
+app.get('/ping', (req, res) => {
+    res.status(200).json({ ok: true, message: 'Pong!' });
+    return;
+})
+
 server.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
